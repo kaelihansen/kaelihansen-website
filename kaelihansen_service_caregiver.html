@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Caregiver Grounding & Support | Kaeli Hansen</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --sun:#F2C12E;--amber:#E8861A;--rust:#C94A1A;--forest:#2C6E2C;--lime:#8AB832;--bark:#3A2008;--parchment:#FBF5E0;--cream:#FEF9EC;
+  --fs:'Playfair Display',serif;--fn:'DM Sans',sans-serif;
+}
+body{background:var(--cream);color:var(--bark);font-family:var(--fn);}
+.site{max-width:980px;margin:0 auto;padding:0 32px;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
+.nav-logo-wrap .nav-logo{font-family:var(--fs);font-size:20px;font-weight:700;color:var(--forest);font-style:italic;}
+.nav-logo-wrap .nav-tagline{font-size:11px;font-weight:400;letter-spacing:0.14em;color:var(--forest);margin-top:3px;font-family:var(--fn);}
+.nav-links{display:flex;gap:28px;list-style:none;}
+.nav-links a{font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--forest);text-decoration:none;}
+.nav-cta{background:var(--amber);color:#FEF9EC;font-family:var(--fn);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:none;padding:11px 26px;border-radius:40px;cursor:pointer;}
+.wave{width:100%;overflow:hidden;line-height:0;}
+.svc-hero{padding:64px 32px;text-align:center;}
+.svc-hero .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:14px;}
+.svc-hero h1{font-family:var(--fs);font-size:48px;font-weight:700;line-height:1.1;margin-bottom:16px;}
+.svc-hero h1 em{font-style:italic;}
+.svc-hero .hero-sub{font-size:15px;font-weight:300;max-width:600px;margin:0 auto 24px;line-height:1.85;}
+.svc-hero .sig{font-family:var(--fs);font-size:14px;font-style:italic;opacity:0.8;}
+.hero-img-wrap{max-width:980px;margin:0 auto 0;padding:0 32px;}
+.hero-img-wrap img{width:100%;max-height:380px;object-fit:cover;border-radius:16px;display:block;}
+.content-band{padding:56px 32px;}
+.content-inner{max-width:980px;margin:0 auto;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;}
+h2.section-title{font-family:var(--fs);font-size:32px;font-weight:700;color:var(--bark);margin-bottom:18px;line-height:1.2;}
+h2.section-title em{font-style:italic;color:var(--forest);}
+.body-text p{font-size:14px;font-weight:300;line-height:1.9;color:#5A3818;margin-bottom:16px;}
+.you-may-be{background:var(--parchment);border-radius:14px;padding:28px 32px;}
+.you-may-be h3{font-family:var(--fs);font-size:22px;font-weight:700;color:var(--bark);margin-bottom:18px;}
+.you-may-be ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.you-may-be ul li{font-size:14px;font-weight:300;color:#5A3818;line-height:1.6;padding-left:20px;position:relative;}
+.you-may-be ul li::before{content:"→";position:absolute;left:0;color:var(--amber);font-weight:500;}
+.what-we-do{padding:48px 32px;background:var(--parchment);}
+.what-we-do-inner{max-width:980px;margin:0 auto;}
+.what-we-do h2{font-family:var(--fs);font-size:32px;font-weight:700;color:var(--bark);margin-bottom:28px;}
+.what-we-do h2 em{font-style:italic;color:var(--forest);}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.step-card{background:var(--cream);border-radius:12px;padding:24px;border-top:3px solid var(--sun);}
+.step-card.s2{border-top-color:var(--lime);}
+.step-card.s3{border-top-color:var(--amber);}
+.step-num{font-family:var(--fs);font-size:36px;font-weight:700;color:#E8D8B0;line-height:1;margin-bottom:10px;}
+.step-title{font-family:var(--fs);font-size:18px;font-weight:700;color:var(--bark);margin-bottom:8px;}
+.step-desc{font-size:13px;font-weight:300;color:#6A4818;line-height:1.75;}
+.cta-band{background:var(--bark);padding:56px 32px;text-align:center;}
+.cta-inner{max-width:520px;margin:0 auto;}
+.cta-band .eyebrow{color:var(--sun);}
+.cta-band h2{font-family:var(--fs);font-size:36px;font-weight:700;color:var(--parchment);margin-bottom:14px;line-height:1.2;}
+.cta-band h2 em{font-style:italic;color:var(--sun);}
+.cta-band p{font-size:14px;font-weight:300;color:#A08060;line-height:1.8;margin-bottom:28px;}
+.btn-book{background:var(--sun);color:var(--bark);font-family:var(--fn);font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:none;padding:16px 44px;border-radius:40px;cursor:pointer;display:inline-block;text-decoration:none;margin-bottom:12px;}
+.btn-back{background:transparent;color:var(--lime);font-family:var(--fn);font-size:12px;font-weight:400;letter-spacing:0.1em;border:1.5px solid var(--lime);padding:12px 28px;border-radius:40px;cursor:pointer;display:inline-block;text-decoration:none;margin-left:12px;}
+.cta-note{font-size:12px;color:#5A3E28;margin-top:10px;}
+footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-logo{font-family:var(--fs);font-size:17px;font-weight:700;color:var(--sun);}
+.footer-tag{font-size:11px;letter-spacing:0.1em;color:var(--lime);opacity:0.7;}
+.footer-links{display:flex;gap:20px;}
+.footer-links a{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8AB832;text-decoration:none;}
+</style></head><body>
+<div class="site">
+  <nav>
+    <div class="nav-logo-wrap">
+      <div class="nav-logo">Kaeli Hansen</div>
+      <div class="nav-tagline">Where Care, Creativity, and Consciousness Meet</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="kaelihansen_homepage.html">Home</a></li>
+      <li><a href="kaelihansen_about.html">About</a></li>
+      <li><a href="kaelihansen_services.html">Services</a></li>
+      <li><a href="kaelihansen_journal.html">Journal</a></li>
+    </ul>
+    <button class="nav-cta">Book a session</button>
+  </nav>
+</div>
+<section class="svc-hero" style="background:var(--forest);">
+  <p class="eyebrow" style="color:var(--lime);">Caregiver Support</p>
+  <h1 style="color:var(--sun);">Care for yourself while you <em style="color:#FEF9EC;">care for others</em></h1>
+  <p class="hero-sub" style="color:#BDD9A0;">Coaching, creative expression, and spiritually grounded support to help you move through burnout, reconnect with your voice, and find deeper meaning in your life.</p>
+  <p class="sig" style="color:var(--sun);">Facilitating a path of Awareness, Action, and Awakening</p>
+</section>
+<div class="hero-img-wrap" style="padding-top:32px;">
+  <img src="data:image/jpeg;base64,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" alt="Caregiver Support — Kaeli Hansen"/>
+</div>
+<div class="wave">
+  <svg viewBox="0 0 980 32" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 L980 0 L980 12 Q735 32 490 20 Q245 8 0 24 Z" fill="#2C6E2C"/>
+  </svg>
+</div><div class="wave" style="transform:rotate(180deg);margin-top:-1px;">
+  <svg viewBox="0 0 980 32" width="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 L980 0 L980 12 Q735 32 490 20 Q245 8 0 24 Z" fill="#FEF9EC"/>
+  </svg>
+</div>
+<section class="content-band">
+  <div class="content-inner">
+    <div class="two-col">
+      <div class="body-text">
+        <p class="eyebrow">About This Work</p>
+        <h2 class="section-title">Find steady footing in the midst of <em>responsibility</em></h2>
+        <div class="body-text">
+          <p>Caregiving is one of the most demanding, most invisible, and most meaningful things a person can do. Whether you are caring for an aging parent, a partner with chronic illness, or a child with complex needs — the weight of it is real, and it deserves real support.</p>
+          <p>Together, we work with emotional overwhelm, burnout, and the quiet loss of self that caregiving can bring. Through exercises to center yourself, listen to your body, and reconnect with your core needs, we build a practice of self-care that can realistically fit into your life.</p>
+          <p>We will also explore small, sustainable actions you can take daily, weekly, and monthly — not grand gestures, but honest, grounded care for the person who keeps everything going.</p>
+        </div>
+      </div>
+      <div class="you-may-be">
+        <h3>You may be&hellip;</h3>
+        <ul>
+          <li>Emotionally exhausted or burned out</li>
+          <li>Disconnected from your own identity</li>
+          <li>Carrying more than you can process alone</li>
+          <li>Longing for creative expression but unsure where to begin</li>
+          <li>Navigating grief alongside caregiving</li>
+          <li>Searching for meaning amid the demands of daily care</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="what-we-do">
+  <div class="what-we-do-inner">
+    <h2>What we <em>work on together</em></h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">Grounding & Centering</div>
+        <div class="step-desc">Exercises to help you come back to yourself — even in the midst of the most demanding seasons.</div>
+      </div>
+      <div class="step-card s2">
+        <div class="step-num">02</div>
+        <div class="step-title">Creative Self-Care</div>
+        <div class="step-desc">Using creative expression as a tool for processing, releasing, and returning to who you are beneath the caregiver role.</div>
+      </div>
+      <div class="step-card s3">
+        <div class="step-num">03</div>
+        <div class="step-title">Sustainable Action</div>
+        <div class="step-desc">Small, realistic self-care practices you can weave into your actual life — not an idealized version of it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="cta-inner">
+    <p class="eyebrow">Ready to begin?</p>
+    <h2>You deserve support <em>too.</em></h2>
+    <p>A gentle 45-minute conversation to explore where you are, what you&rsquo;re carrying, and where you&rsquo;d like to go. No pressure, just presence.</p>
+    <a class="btn-book" href="#">Book a session &rarr;</a>
+    <a class="btn-back" href="kaelihansen_services.html">&larr; All services</a>
+    <p class="cta-note">Sessions available online &middot; Sliding scale available upon request</p>
+  </div>
+</section>
+<footer>
+  <div class="footer-logo">Kaeli Hansen</div>
+  <div class="footer-tag">rootandreturn.com</div>
+  <div class="footer-links">
+    <a href="https://www.facebook.com/kaelihansen108/" target="_blank">Facebook</a>
+    <a href="https://substack.com/@caregiverscount" target="_blank">Substack</a>
+    <a href="#">Contact</a>
+    <a href="kaelihansen_legal.html">Legal</a>
+  </div>
+  <div style="background:#1A3D1A;padding:14px 32px;text-align:center;width:100%;margin-top:1px;">
+    <p style="font-size:11px;font-weight:300;color:rgba(138,184,50,0.6);letter-spacing:0.06em;">&copy; 2026 Kaeli Ferguson Hansen, DBA Kaeli Hansen | Care, Creativity, &amp; Consciousness (<a href="https://kaelihansen.com" style="color:rgba(138,184,50,0.7);text-decoration:none;">kaelihansen.com</a>) and Root &amp; Return (<a href="https://rootandreturn.org" style="color:rgba(138,184,50,0.7);text-decoration:none;">rootandreturn.org</a>). All rights reserved.</p>
+  </div>
+</footer></body></html>
