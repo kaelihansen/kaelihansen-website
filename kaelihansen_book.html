@@ -112,9 +112,9 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0
 .price-card-amount{font-size:28px;font-weight:500;color:var(--forest);font-family:var(--fs);margin-bottom:4px;}
 .price-card-per{font-size:12px;color:#8B6245;margin-bottom:14px;}
 .price-card-desc{font-size:13px;font-weight:300;color:#6A4818;line-height:1.75;}
-.sliding-scale-note{background:#EAF4D8;border-radius:12px;padding:20px 28px;text-align:center;margin-top:28px;border:1px solid var(--lime);}
-.sliding-scale-note p{font-size:14px;font-weight:300;color:#2A4A18;line-height:1.75;}
-.sliding-scale-note strong{font-weight:500;color:var(--forest);}
+.access-note-legacy{background:#EAF4D8;border-radius:12px;padding:20px 28px;text-align:center;margin-top:28px;border:1px solid var(--lime);}
+.access-note-legacy p{font-size:14px;font-weight:300;color:#2A4A18;line-height:1.75;}
+.access-note-legacy strong{font-weight:500;color:var(--forest);}
 
 /* SUBSTACK CTA */
 .substack-band{background:var(--bark);padding:48px 32px;text-align:center;}
@@ -130,6 +130,18 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
 .footer-tag{font-size:11px;letter-spacing:0.1em;color:var(--lime);opacity:0.7;}
 .footer-links{display:flex;gap:20px;}
 .footer-links a{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#8AB832;text-decoration:none;}
+
+.pricing-intro{font-family:var(--fs);font-size:18px;font-weight:300;line-height:1.8;color:#6A4818;max-width:580px;margin-bottom:36px;border-left:2px solid var(--amber);padding-left:20px;}
+.discovery-card{background:var(--forest) !important;border-top:none !important;}
+.discovery-card .price-card-name{color:rgba(255,255,255,0.7);}
+.discovery-card .price-card-amount,.discovery-card .price-card-amount{color:#fff !important;}
+.discovery-card .price-card-per{color:rgba(255,255,255,0.6);}
+.discovery-card .price-card-desc{color:rgba(255,255,255,0.85);}
+.intake-card{border-top-color:var(--amber) !important;}
+.ongoing-card{border-top-color:var(--terracotta) !important;}
+.access-note{border-top:0.5px solid rgba(90,70,50,0.15);padding-top:24px;margin-top:28px;}
+.access-note p{font-family:var(--fs);font-size:17px;font-weight:300;font-style:italic;line-height:1.85;color:#7A6550;max-width:560px;}
+.access-note p strong{font-style:normal;font-weight:500;color:var(--bark);}
 </style>
 </head>
 <body>
@@ -191,7 +203,7 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
           <span class="offer-badge b1">Individual</span>
           <div class="offer-name">Caregiver Grounding &amp; Support</div>
           <p class="offer-desc">One-on-one sessions for caregivers navigating burnout, grief, and the quiet loss of self.</p>
-          <div class="offer-price">From $135 &middot; Discovery call recommended</div>
+          <div class="offer-price">$135 / 50-minute session</div>
         </div>
       </div>
       <div class="offer-card o2">
@@ -200,7 +212,7 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
           <span class="offer-badge b2">Individual</span>
           <div class="offer-name">Creative Expression Sessions</div>
           <p class="offer-desc">Guided sessions using arts, writing, music, &amp; movement to unlock what words alone cannot reach.</p>
-          <div class="offer-price">From $135 per session</div>
+          <div class="offer-price">$135 / 50-minute session</div>
         </div>
       </div>
       <div class="offer-card o3">
@@ -209,7 +221,7 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
           <span class="offer-badge b3">Individual</span>
           <div class="offer-name">Conscious Journeying</div>
           <p class="offer-desc">For seekers ready to explore the bigger questions, with your inner wisdom leading the way.</p>
-          <div class="offer-price">From $135 &middot; Discovery call recommended</div>
+          <div class="offer-price">$135 / 50-minute session</div>
         </div>
       </div>
       <div class="offer-card o4">
@@ -239,7 +251,6 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
           <li>A warm, unhurried 45-minute introductory conversation</li>
           <li>No pressure to commit &mdash; just an honest exploration</li>
           <li>Sessions held online via Zoom</li>
-          <li>Sliding scale pricing available &mdash; we&rsquo;ll discuss what works for you</li>
           <li>A response within 1&ndash;2 business days</li>
         </ul>
       </div>
@@ -271,14 +282,13 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
         <p class="form-note">This is optional &mdash; you can also simply say hello.</p>
       </div>
       <div class="form-group">
-        <label for="scale">Is there anything about your current circumstances you'd like me to know?</label>
+        <label for="scale">Anything you'd like me to know before we connect?</label>
         <select id="scale" name="scale">
-          <option value="">I&rsquo;d prefer to share this in our conversation</option>
-          <option value="caregiver">I am currently providing unpaid care for a family member</option>
+          <option value="">I&rsquo;d prefer to discuss this in our first conversation</option>
+          <option value="full">No, nothing additional to share</option>
           <option value="group">I&rsquo;m inquiring about group or workshop pricing</option>
-          <option value="other">I have something I&rsquo;d like to share privately</option>
         </select>
-        <p class="form-note">This is optional &mdash; and anything you share here is held with care.</p>
+        <p class="form-note">No judgment either way &mdash; this helps me prepare for our conversation.</p>
       </div>
       <p style="font-size:12px;font-weight:300;color:#8B6245;text-align:center;margin-bottom:10px;font-style:italic;">By booking a session you acknowledge our <a href="kaelihansen_legal.html" style="color:var(--forest);font-weight:500;">disclaimer</a>.</p>
       <button class="btn-submit">Send my message &rarr;</a>
@@ -294,28 +304,28 @@ footer{background:var(--forest);padding:28px 32px;display:flex;justify-content:s
   <div class="pricing-inner">
     <p class="pricing-eyebrow">Session investment</p>
     <h2 class="pricing-title">Your healing has <em>value.</em><br>So does your time.</h2>
-    <p class="pricing-note">This work is offered with full presence, deep care, and the accumulated wisdom of decades of practice. What you invest here comes back to you &mdash; in clarity, capacity, and a renewed relationship with yourself.</p>
+    <p class="pricing-intro">This work is offered with full presence, deep care, and the accumulated wisdom of decades of practice. What you invest here comes back to you &mdash; in clarity, capacity, and a renewed relationship with yourself.</p>
     <div class="pricing-grid">
-      <div class="price-card" style="background:#5A7055;border:none;">
-        <div class="price-card-name" style="color:rgba(255,255,255,0.65);">Begin here</div>
-        <div class="price-card-amount" style="color:#fff;">Complimentary</div>
-        <div class="price-card-per" style="color:rgba(255,255,255,0.6);">20-minute discovery call</div>
-        <div class="price-card-desc" style="color:rgba(255,255,255,0.88);">Before anything else, we talk. This call is a chance for you to feel into the work, ask questions, and sense whether we&rsquo;re a good fit &mdash; with no pressure and no commitment required.</div>
+      <div class="price-card discovery-card">
+        <div class="price-card-name">Begin here</div>
+        <div class="price-card-amount">Complimentary</div>
+        <div class="price-card-per">20-minute discovery call</div>
+        <div class="price-card-desc">Before anything else, we talk. This call is a chance for you to feel into the work, ask questions, and sense whether we&rsquo;re a good fit &mdash; with no pressure and no commitment required.</div>
       </div>
-      <div class="price-card pc2">
+      <div class="price-card intake-card">
         <div class="price-card-name">First session</div>
         <div class="price-card-amount">$175</div>
         <div class="price-card-per">75-minute intake session</div>
         <div class="price-card-desc">Your first full session is longer by design. We take time to explore where you are, what you&rsquo;re carrying, and what you most need. There is no rushing the beginning.</div>
       </div>
-      <div class="price-card pc3">
+      <div class="price-card ongoing-card">
         <div class="price-card-name">Ongoing sessions</div>
         <div class="price-card-amount">$135</div>
         <div class="price-card-per">50-minute session</div>
-        <div class="price-card-desc">Each session is a dedicated space held entirely for you &mdash; to process, to reflect, to be witnessed, and to move. Available Tuesday, Wednesday, and Friday online via Zoom.</div>
+        <div class="price-card-desc">Each session is a dedicated space held entirely for you &mdash; to process, to reflect, to be witnessed, and to move. Rooted in awareness-based practice, energy work, and the wisdom traditions of contemplative psychology.</div>
       </div>
     </div>
-    <div class="sliding-scale-note">
+    <div class="access-note">
       <p><strong>A note on access:</strong> If you are a caregiver navigating genuine financial hardship, I invite you to reach out through the contact form before booking. I hold a small number of spots for those in need, and I am glad to have that conversation privately and with care.</p>
     </div>
   </div>
